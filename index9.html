@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: chartreuse;
+            height: 200px;
+            width: 500px;
+            padding: 5px;
+            animation: move 5s ease 0s forwards ;
+        }
+        @keyframes move {
+            from{
+                /* transform: rotate(0); */
+                transform: scale(0);
+                background-color: chartreuse;
+
+            }
+            to{
+                /* transform: rotate(180deg); */
+                transform: scale(1);
+                background-color: crimson;
+      
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ipsam exercitationem neque dolore fugiat vitae mollitia ad quo omnis, minus odio eius voluptas perspiciatis cumque rem in dolor laborum harum quisquam quidem vel deserunt est excepturi expedita! Iure architecto deleniti quas sit repudiandae voluptas aliquid ab natus delectus. Aliquam, laudantium.</div>
+</body>
+</html>
